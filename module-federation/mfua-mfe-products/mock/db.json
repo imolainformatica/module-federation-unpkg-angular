@@ -1,0 +1,105 @@
+{
+  "data":[
+    {
+      "id":"60d0fe4f5311236168a109cc",
+      "subscriptions": [
+        {
+          "id": "1",
+          "description": "Nerdflix",
+          "co_signees": ["60d0fe4f5311236168a109cd"]
+        },
+        {
+          "id": "2",
+          "description": "Amazon Second",
+          "co_signees": []
+        },
+        {
+          "id": "3",
+          "description": "HOnoLUlu",
+          "co_signees": ["60d0fe4f5311236168a109cd", "60d0fe4f5311236168a109ce", "60d0fe4f5311236168a109cf"]
+        }
+      ]
+    },
+    {
+      "id":"60d0fe4f5311236168a109cd",
+      "subscriptions": [
+        {
+          "id": "1",
+          "description": "Nerdflix",
+          "co_signees": ["60d0fe4f5311236168a109cc"]
+        },
+        {
+          "id": "2",
+          "description": "Amazon Second",
+          "co_signees": []
+        },
+        {
+          "id": "3",
+          "description": "HOnoLUlu",
+          "co_signees": ["60d0fe4f5311236168a109cc", "60d0fe4f5311236168a109ce", "60d0fe4f5311236168a109cf"]
+        }
+      ]
+    },
+    {
+      "id":"60d0fe4f5311236168a109ce",
+      "subscriptions": [
+        {
+          "id": "3",
+          "description": "HOnoLUlu",
+          "co_signees": ["60d0fe4f5311236168a109cd", "60d0fe4f5311236168a109cc", "60d0fe4f5311236168a109cf"]
+        }
+      ]
+    },
+    {
+      "id":"60d0fe4f5311236168a109cf",
+      "subscriptions": [
+      ]
+    },
+    {
+      "id":"60d0fe4f5311236168a109d0",
+      "subscriptions": [
+        {
+          "id": "1",
+          "description": "Nerdflix",
+          "co_signees": []
+        },
+        {
+          "id": "2",
+          "description": "Amazon Second",
+          "co_signees": []
+        },
+        {
+          "id": "3",
+          "description": "HOnoLUlu",
+          "co_signees": []
+        }
+      ]
+    },
+    {
+      "id":"60d0fe4f5311236168a109d3",
+      "subscriptions": [
+        {
+          "id": "4",
+          "description": "VVVVVVVVVVVVVVVVVid",
+          "co_signees": []
+        }
+      ]
+    },
+    {
+      "id":"60d0fe4f5311236168a109d4",
+      "subscriptions": []
+    },
+    {
+      "id":"60d0fe4f5311236168a109d6",
+      "subscriptions": []
+    },
+    {
+      "id":"60d0fe4f5311236168a109d8",
+      "subscriptions": []
+    },
+    {
+      "id":"60d0fe4f5311236168a109d9",
+      "subscriptions": []
+    }
+  ]
+}
