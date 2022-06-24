@@ -1,0 +1,10 @@
+<h1 class="subtitle">User Detail</h1>
+<h2 class="name-title">({{(person | async)?.title}}) {{(person | async)?.firstName}} {{(person | async)?.lastName}}</h2>
+<div class="image">
+  <img [src]="(person | async)?.picture" [alt]="(person | async)?.id">
+</div>
+<div class="sub-list todo">
+  <h3 class="sub-list__title">User Subscriptions</h3>
+  <p>NOT YET IMPLEMENTED</p>
+</div>
+
