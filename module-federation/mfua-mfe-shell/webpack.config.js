@@ -4,6 +4,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
+const webpack = require('webpack');
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -57,15 +59,27 @@ const config = {
   },
 };
 
-module.exports = () => {
-  if (isProduction) {
-    config.mode = "production";
-
-    config.plugins.push(new MiniCssExtractPlugin());
-
-    config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
-  } else {
-    config.mode = "development";
-  }
-  return config;
+module.exports = {
+  output: {
+    publicPath: 'http://localhost:4200/',
+    uniqueName: 'mfua-mfe-shell',
+    scriptType: 'text/javascript',
+  },
+  optimization: {
+    runtimeChunk: false,
+  },
+  plugins: [
+    new ModuleFederationPlugin({
+      remotes: {
+        people: 'people@http://localhost:4201/remoteEntry.js}',
+        products: 'products@http://localhost:4202/remoteEntry.js}',
+        ui: 'ui@http://localhost:4203/remoteEntry.js}',
+      },
+      shared: {
+        '@angular/core': { eager: true, singleton: true },
+        '@angular/common': { eager: true, singleton: true },
+        '@angular/router': { eager: true, singleton: true },
+      },
+    }),
+  ],
 };

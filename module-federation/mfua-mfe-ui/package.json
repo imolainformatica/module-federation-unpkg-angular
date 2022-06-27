@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4203",
     "build": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "test": "ng test",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
-    "serve": "webpack serve"
+    "serve": "webpack serve --port 4203"
   },
   "private": true,
   "dependencies": {
