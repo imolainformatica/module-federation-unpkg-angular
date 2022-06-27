@@ -22,11 +22,11 @@ export class ProductsListComponent implements OnInit {
   }
 
   addProduct() {
-
+    alert("Not yet implemented");
   }
 
   addCosignee() {
-    
+    alert("Not yet implemented");
   }
 
 }
