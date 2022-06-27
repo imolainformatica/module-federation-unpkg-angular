@@ -1,0 +1,12 @@
+<h1 class="subtitle">User List</h1>
+<ul>
+  <li *ngFor="let person of (people | async)">
+    <div class="person">
+      <div class="image"><img [src]="person.picture" [alt]="person.id"></div>
+      <div class="name">{{person.firstName}} {{person.lastName}}</div>
+      <div class="actions">
+        <a class="detail-action" [routerLink]="'user/' + person.id">Inspect</a>
+      </div>
+    </div>
+  </li>
+</ul>

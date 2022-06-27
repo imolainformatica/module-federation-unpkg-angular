@@ -347,3 +347,13 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+
+.idea/
+
+module-federation/mfua-mfe-people/.vscode/
+
+module-federation/mfua-mfe-products/.vscode/
+
+module-federation/mfua-mfe-shell/.vscode/
+
+module-federation/mfua-mfe-ui/.vscode/
